@@ -143,6 +143,16 @@ function getRandom(arr) {
 
   let randomSpecialCharacters = getRandom(specialCharacters);
   console.log(randomSpecialCharacters);
+
+
+  let randomNumbers = getRandom(numericCharacters);
+  console.log(randomNumbers);
+
+  let randomUpperCasedCharacters = getRandom(upperCasedCharacters);
+  console.log(randomUpperCasedCharacters); 
+
+  let randomLowerCasedCharacters = getRandom(lowerCasedCharacters);
+  console.log(randomLowerCasedCharacters);
   
 
 // Function to generate password with user input
