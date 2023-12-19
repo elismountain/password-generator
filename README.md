@@ -18,7 +18,7 @@ Generate a password when the button is clicked:
   4. Once prompts are answered then the password should be generated and displayed in an alert or written to the page
 
 ## A link to the deployed application
-https://elismountain.github.io/Password_Generator/
+https://elismountain.github.io/password-generator/
 
 ## A screenshot of the application
 ![screenshot-password-generator](screen3.jpg)
