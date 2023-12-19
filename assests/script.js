@@ -140,6 +140,9 @@ function getRandom(arr) {
     // Return an element at a randomly generated index
     return randomArrElement;
   }
+
+  let randomSpecialCharacters = getRandom(specialCharacters);
+  console.log(randomSpecialCharacters);
   
 
 // Function to generate password with user input
