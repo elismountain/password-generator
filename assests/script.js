@@ -157,8 +157,39 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
+  userPasswordOptions = getPasswordOptions();
 
+  let finalPassword = '';
+
+  if (userPasswordOptions.includeSpecialCharacters) {
+    finalPassword += specialCharacters.join('');
+  }
+
+  if (userPasswordOptions.includeNumbers) {
+    finalPassword += numericCharacters.join('');
+  }
+
+  if (userPasswordOptions.includeUpperCasedCharacters) {
+    finalPassword += upperCasedCharacters.join('');
+  }
+
+  if (userPasswordOptions.includeLowerCasedCharacters) {
+    finalPassword += lowerCasedCharacters.join('');
+  }
+
+
+// Update the length of the password according to user choice
+// ....initialise an empty string variable to store user desired password length
+// ....loop through userPasswordOptions 
+let generatedPassword = '';
+  for (let i = 0; i < userPasswordOptions.length; i++) {
+    let randomIndex = Math.floor(Math.random() * finalPassword.length);
+    generatedPassword += finalPassword[randomIndex];
+  }
+  // console.log(generatedPassword);
+  return generatedPassword;
 }
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
