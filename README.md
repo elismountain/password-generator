@@ -21,4 +21,4 @@ Generate a password when the button is clicked:
 https://elismountain.github.io/password-generator/
 
 ## A screenshot of the application
-![screenshot-password-generator](password-ganarator.png)
+![screenshot-password-generator](assets/images/password-ganarator.png)
